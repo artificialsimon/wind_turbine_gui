@@ -12,3 +12,11 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    if (ui->labelText1->text() == "Hello world")
+     ui->labelText1->setText("");
+    else
+     ui->labelText1->setText("Hello world");
+}
